@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+  
+    <thead>
+    <tr id="0">
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Status</th>
+        <th id="change_status">Change Status</th>
+        <th id=remove>Remove</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+    <div id="rightSide">
+        <div id="bottom">
+            <p id="top_title">Add a New Book</p>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author"><br>
+            <label for="pages">Pages:</label><br>
+            <input type="text" id="pages" name="pages"><br>
+            <label>Status:</label><br>
+            <input type="radio" id="status_read" name="status" value="Read">
+            <label for="status_read">Read</label>
+            <input type="radio" id="status_not_read" name="status" value="Not read yet">
+            <label for="status_not_read">Not Read Yet</label>
+
+
+            
+            <br><br>
+            <input type="submit" value="Submit" onclick="addBook()">
+        
+            <!-- <button onclick="newBook()" class="positioning">Add a New Book</button> -->
+        </div>
+    </div>
+    </body>
+    <script src="myScript.js"></script>
+</body>
+</html>
